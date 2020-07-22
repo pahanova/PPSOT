@@ -18,6 +18,7 @@ namespace PPSOT.Controllers
         public IActionResult Index()
         {
             IWebDriver driver = new ChromeDriver();
+            // Страницы, с которой парсим
             driver.Url = @"https://www.topnomer.ru/tarifs/";
 
             Reveal(driver);
@@ -39,7 +40,7 @@ namespace PPSOT.Controllers
             using (sw)
             {
                 //sw.WriteLine("[");
-
+                // Перевод спаршеных данных в JSON
                 foreach (IWebElement element in elements2)
                 {
                     counter += 1;
@@ -71,6 +72,7 @@ namespace PPSOT.Controllers
                     Console.WriteLine(counter);
                 }
 
+                // Перевод спаршеных данных в JSON
                 foreach (IWebElement element in elements1)
                 {
                     counter += 1;
@@ -113,6 +115,7 @@ namespace PPSOT.Controllers
             return View();
         }
 
+        // Нажатие на нопку "показать ещё"
         public static void Reveal(IWebDriver driver)
         {
             System.Threading.Thread.Sleep(10000);
@@ -122,6 +125,7 @@ namespace PPSOT.Controllers
             System.Threading.Thread.Sleep(10000);
         }
 
+        // Считывание цен
         public static void SetAllPrices(IWebElement element, Tariff tarif)
         {
             int counter = 0;
@@ -142,6 +146,7 @@ namespace PPSOT.Controllers
             }
         }
 
+        // Считывание операторов
         public static void SetOperator(IWebElement element, Tariff tarif)
         {
             IWebElement section = element.FindElement(By.XPath(@".//div[@class='left_section']"));
@@ -292,6 +297,7 @@ namespace PPSOT.Controllers
                 tarif.setOper("МТТ");
         }
 
+        // Считывание названий тарифов
         public static void SetName(IWebElement element, Tariff tarif)
         {
             IWebElement section = element.FindElement(By.XPath(@".//div[@class='left_section']"));
@@ -300,6 +306,7 @@ namespace PPSOT.Controllers
             tarif.setName(refer.Text);
         }
 
+        // Считывание свойств
         public static void SetAttributes(IWebElement element, Tariff tarif)
         {
             IWebElement section = element.FindElement(By.XPath(@".//div[@class='left_section']"));

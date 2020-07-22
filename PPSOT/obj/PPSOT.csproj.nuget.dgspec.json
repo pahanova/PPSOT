@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Docs\\PPSOT-master\\PPSOT\\PPSOT.csproj": {}
+    "D:\\Git\\PPSOT\\PPSOT\\PPSOT.csproj": {}
   },
   "projects": {
-    "D:\\Docs\\PPSOT-master\\PPSOT\\PPSOT.csproj": {
+    "D:\\Git\\PPSOT\\PPSOT\\PPSOT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Docs\\PPSOT-master\\PPSOT\\PPSOT.csproj",
+        "projectUniqueName": "D:\\Git\\PPSOT\\PPSOT\\PPSOT.csproj",
         "projectName": "PPSOT",
-        "projectPath": "D:\\Docs\\PPSOT-master\\PPSOT\\PPSOT.csproj",
+        "projectPath": "D:\\Git\\PPSOT\\PPSOT\\PPSOT.csproj",
         "packagesPath": "C:\\Users\\pahan\\.nuget\\packages\\",
-        "outputPath": "D:\\Docs\\PPSOT-master\\PPSOT\\obj\\",
+        "outputPath": "D:\\Git\\PPSOT\\PPSOT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
