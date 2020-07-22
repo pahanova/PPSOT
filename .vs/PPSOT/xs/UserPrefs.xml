@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{227C98E4-2CDB-4288-BF7B-216273503D10}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/launchSettings.json">
+    <Files>
+      <File FileName="Properties/launchSettings.json" Line="27" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PPSOT PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

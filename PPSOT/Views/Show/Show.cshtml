@@ -1,0 +1,637 @@
+﻿@{ 
+    Layout = null;
+}
+@{
+    var tarrifs = ViewBag.tarifs;
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/png" href="~/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <link rel="stylesheet" type="text/css" href="~/css/font-awesome.min.css">
+
+    <title>Home</title>
+
+
+
+    <!-- Analytics -->
+    <!-- Analytics END -->
+
+</head>
+<body>
+    <!-- Main container -->
+    <div class="page-container">
+
+        <!-- bloc-0 -->
+        <div class="bloc bloc-bg-texture texture-darken-strong l-bloc pink-bg-gradient" id="bloc-0">
+            <div class="container bloc-sm">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
+                            <a class="navbar-brand mx-auto" href="/"><img src="img/antenna.png" alt="logo" /></a>
+                            <button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" data-toggle="collapse" data-target=".navbar-16007" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse navbar-16007">
+                                <ul class="site-navigation nav navbar-nav mx-auto justify-content-center">
+                                    <li class="nav-item">
+                                        <a href="/" class="nav-link ltc-white">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="~/map.html" class="nav-link a-btn ltc-white">Карта</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="~/account.html" class="nav-link a-btn ltc-white">Аккаунт</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bloc-0 END -->
+        <!-- ScrollToTop Button -->
+        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
+        <!-- ScrollToTop Button END-->
+        <!-- bloc-7 -->
+        @using (Html.BeginForm("Show", "Show", FormMethod.Post))
+        {
+            <div class="bloc l-bloc " id="bloc-7">
+                <div class="container bloc-lg">
+                    <div class="row row-margin-left">
+                        <div class="col-sm-4 col-lg-11">
+                            <ul class="nav nav-tabs" id="nav-47817-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="a-btn nav-link active" id="nav-47817-tab-1" data-toggle="tab" href="#nav-47817-content-1" role="tab" aria-controls="nav-47817-content-1" aria-selected="true">Цена подключения</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="a-btn nav-link" id="nav-47817-tab-2" data-toggle="tab" href="#nav-47817-content-2" role="tab" aria-controls="nav-47817-content-2" aria-selected="false">Абоненская плата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="a-btn nav-link" id="nav-47817-tab-3" data-toggle="tab" href="#nav-47817-content-3" role="tab" aria-controls="nav-47817-content-3" aria-selected="false">Оператор<br></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="nav-47817-content-1" role="tabpanel" aria-labelledby="nav-47817-content-1">
+                                    <h6 class="mg-md">
+                                        Важность от 1 до 10:
+                                    </h6>
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <select class="form-control" name="connection_price">
+                                                <option value="1">
+                                                    1
+                                                </option>
+                                                <option value="2">
+                                                    2
+                                                </option>
+                                                <option value="3">
+                                                    3
+                                                </option>
+                                                <option value="4">
+                                                    4
+                                                </option>
+                                                <option value="5">
+                                                    5
+                                                </option>
+                                                <option value="6">
+                                                    6
+                                                </option>
+                                                <option value="7">
+                                                    7
+                                                </option>
+                                                <option value="8">
+                                                    8
+                                                </option>
+                                                <option value="9">
+                                                    9
+                                                </option>
+                                                <option value="10">
+                                                    10
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade-tab-bs" id="nav-47817-content-2" role="tabpanel" aria-labelledby="nav-47817-content-2">
+                                    <p>
+                                        Важность от 1 до 10
+                                    </p>
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <select class="form-control" name="abonent_price">
+                                                <option value="1">
+                                                    1
+                                                </option>
+                                                <option value="2">
+                                                    2
+                                                </option>
+                                                <option value="3">
+                                                    3
+                                                </option>
+                                                <option value="4">
+                                                    4
+                                                </option>
+                                                <option value="5">
+                                                    5
+                                                </option>
+                                                <option value="6">
+                                                    6
+                                                </option>
+                                                <option value="7">
+                                                    7
+                                                </option>
+                                                <option value="8">
+                                                    8
+                                                </option>
+                                                <option value="9">
+                                                    9
+                                                </option>
+                                                <option value="10">
+                                                    10
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade-tab-bs" id="nav-47817-content-3" role="tabpanel" aria-labelledby="nav-47817-content-3">
+                                    <div class="form-group">
+                                        <select class="form-control" name="name">
+                                            <option value="Мегафон">
+                                                Мегафон
+                                            </option>
+                                            <option value="Билайн">
+                                                Билайн
+                                            </option>
+                                            <option value="МТС">
+                                                МТС
+                                            </option>
+                                            <option value="Ростелеком">
+                                                Ростелеком
+                                            </option>
+                                            <option value="Матрикс телеком">
+                                                Маткрис телеком
+                                            </option>
+                                            <option value="Йота">
+                                                Йота
+                                            </option>
+                                            <option value="Теле2">
+                                                Теле2
+                                            </option>
+                                            <option value="Wifire">
+                                                Wifire
+                                            </option>
+                                            <option value="КантриКом">
+                                                КантриКом
+                                            </option>
+                                            <option value="Манго телеком">
+                                                Манго телеком
+                                            </option>
+                                            <option value="EZ Mobile">
+                                                EZ Mobile
+                                            </option>
+                                            <option value="Sim Sim">
+                                                Sim Sim
+                                            </option>
+                                            <option value="МТТ">
+                                                МТТ
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <p>
+                                        Важность от 1 до 10
+                                    </p>
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <select class="form-control" name="name_force">
+                                                <option value="1">
+                                                    1
+                                                </option>
+                                                <option value="2">
+                                                    2
+                                                </option>
+                                                <option value="3">
+                                                    3
+                                                </option>
+                                                <option value="4">
+                                                    4
+                                                </option>
+                                                <option value="5">
+                                                    5
+                                                </option>
+                                                <option value="6">
+                                                    6
+                                                </option>
+                                                <option value="7">
+                                                    7
+                                                </option>
+                                                <option value="8">
+                                                    8
+                                                </option>
+                                                <option value="9">
+                                                    9
+                                                </option>
+                                                <option value="10">
+                                                    10
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-d btn-lg btn-button-style bloc-button" type="submit" name="action">
+                                Покажите мне ответы!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <!-- bloc-7 END -->
+        <!-- bloc-7 -->
+        <div class="bloc l-bloc" id="bloc-7">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-8 offset-lg-0 col-lg-12">
+                        <div id="accordion-99">
+                            <div class="card">
+                                <h2 class="mg-md">
+                                    Топ 10 тарифов для вас:
+                                </h2>
+                                <div class="card-header" id="heading1">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-1" aria-expanded="true" aria-controls="accordion-99-item-1" target="#accordion-99-item-1">Первое место</a>
+                                </div>
+                                <div id="accordion-99-item-1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[0].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[0].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+                                                    
+                                                    string[] features = tarrifs[0].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+                                            
+                                          
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[0].connectionprice
+                                            <br>Абонентская плата: @tarrifs[0].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="heading2">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-2" aria-expanded="false" aria-controls="accordion-99-item-2" target="#accordion-99-item-2">Второе место</a>
+                                </div>
+                                <div id="accordion-99-item-2" class="collapse" aria-labelledby="heading2" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[1].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[1].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[1].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[1].connectionprice
+                                            <br>Абонентская плата: @tarrifs[1].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading3">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-3" aria-expanded="false" aria-controls="accordion-99-item-3" target="#accordion-99-item-3">Третье место<br></a>
+                                </div>
+                                <div id="accordion-99-item-3" class="collapse" aria-labelledby="heading3" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[2].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[2].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[2].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[2].connectionprice
+                                            <br>Абонентская плата: @tarrifs[2].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading4">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-4" aria-expanded="false" aria-controls="accordion-99-item-4" target="#accordion-99-item-4">Четвертое место</a>
+                                </div>
+                                <div id="accordion-99-item-4" class="collapse" aria-labelledby="heading4" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[3].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[3].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[3].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[3].connectionprice
+                                            <br>Абонентская плата: @tarrifs[3].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading5">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-5" aria-expanded="false" aria-controls="accordion-99-item-5" target="#accordion-99-item-5">Пятое место</a>
+                                </div>
+                                <div id="accordion-99-item-5" class="collapse" aria-labelledby="heading5" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[4].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[4].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[4].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[4].connectionprice
+                                            <br>Абонентская плата: @tarrifs[4].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading6">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-6" aria-expanded="false" aria-controls="accordion-99-item-6" target="#accordion-99-item-6">Шестое место</a>
+                                </div>
+                                <div id="accordion-99-item-6" class="collapse" aria-labelledby="heading6" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[5].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[5].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[5].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[5].connectionprice
+                                            <br>Абонентская плата: @tarrifs[5].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading7">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-7" aria-expanded="false" aria-controls="accordion-99-item-7" target="#accordion-99-item-7">Седьмое место</a>
+                                </div>
+                                <div id="accordion-99-item-7" class="collapse" aria-labelledby="heading7" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[6].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[6].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[6].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[6].connectionprice
+                                            <br>Абонентская плата: @tarrifs[6].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading8">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-8" aria-expanded="false" aria-controls="accordion-99-item-8" target="#accordion-99-item-8">Восьмое место</a>
+                                </div>
+                                <div id="accordion-99-item-8" class="collapse" aria-labelledby="heading8" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[7].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[7].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[7].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[7].connectionprice
+                                            <br>Абонентская плата: @tarrifs[7].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading9">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-9" aria-expanded="false" aria-controls="accordion-99-item-9" target="#accordion-99-item-9">Девятое место<br></a>
+                                </div>
+                                <div id="accordion-99-item-9" class="collapse" aria-labelledby="heading9" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[8].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[8].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[8].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[8].connectionprice
+                                            <br>Абонентская плата: @tarrifs[8].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading10">
+                                    <a href="#" class="a-btn" data-toggle="collapse" data-target="#accordion-99-item-10" aria-expanded="false" aria-controls="accordion-99-item-10" target="#accordion-99-item-10">Десятое место</a>
+                                </div>
+                                <div id="accordion-99-item-10" class="collapse" aria-labelledby="heading10" data-parent="#accordion-99">
+                                    <div class="card-body">
+                                        <p>
+                                            @tarrifs[9].oper
+                                        </p>
+                                        <h4 class="mg-md">
+                                            @tarrifs[9].name
+                                        </h4>
+                                        <h6 class="mg-md btn-resize-mode h6-style">
+                                            <ul>
+                                                @{
+
+                                                    features = tarrifs[9].features.Split("\r\n");
+                                                }
+                                                @for (int i = 0; i < features.Length - 1; i++)
+                                                {
+                                                    <li>
+                                                        <span>@features[i]</span><br>
+                                                    </li>
+                                                }
+                                            </ul>
+
+
+                                        </h6>
+                                        <h6 class="mg-md">
+                                            Цена подключения: @tarrifs[9].connectionprice
+                                            <br>Абонентская плата: @tarrifs[9].mounthlypay
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- Main container END -->
+
+
+    <script src="~/js/jquery-3.3.1.js"></script>
+    <script src="~/js/bootstrap.bundle.js"></script>
+    <script src="~/js/blocs.js"></script>
+    <!-- Additional JS END -->
+    <!-- Preloader -->
+    <div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+    <!-- Preloader END -->
+</body>
+</html>
